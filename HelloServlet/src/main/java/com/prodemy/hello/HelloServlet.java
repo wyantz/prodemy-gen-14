@@ -9,6 +9,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * HelloServlet
+ * @author Awiyanto
+ *
+ */
 @WebServlet("/hello.html")
 public class HelloServlet extends HttpServlet {
 
