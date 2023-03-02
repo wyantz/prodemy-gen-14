@@ -9,7 +9,7 @@ import com.prodemy.gen14.util.StringUtil;
  * @author Awiyanto
  *
  */
-public class Barang {
+public class Barang implements Comparable<Barang> {
 	private String nama;
 	private int harga;
 	private int persediaan;
@@ -72,5 +72,9 @@ public class Barang {
 				", stok:"+this.persediaan
 				;
 	}
-
+	
+	@Override
+	public int compareTo(Barang o) {
+		return o.getHarga() - this.harga;
+	}
 }
